@@ -1,0 +1,169 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script type="javascript" src="./index.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: fit-content;
+        background-image: url(./wesite.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+      }
+      main {
+        height: 30em;
+        color: rgb(0, 0, 0);
+      }
+      header {
+        margin: 20px;
+      }
+      .logo {
+        width: fit-content;
+      }
+      header .logo h2 {
+        font-style: italic;
+        pointer-events: visibleFill;
+        text-decoration: none;
+        text-transform: initial;
+        cursor: pointer;
+        font-size: 50px;
+      }
+      header .logo h2 span {
+        color: rgb(199, 102, 18);
+        font-size: 53px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      section {
+        margin: 7px;
+        align-items: center;
+        justify-content: center;
+
+        -ms-flex-align: center;
+        margin-top: 11%;
+
+        display: flex;
+        gap: 90px;
+      }
+
+      div button {
+        padding: 30px;
+
+        color: rgb(10, 5, 5);
+        font-size: 25px;
+        background-color: rgba(238, 115, 0, 0.79);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 10px;
+        border: 2px solid rgb(229, 230, 227);
+      }
+      button a {
+        text-decoration: none;
+        color: black;
+      }
+      button:hover {
+        border-color: rgb(5, 159, 173);
+        color: rgb(23, 18, 18);
+
+        box-shadow: 3px 4px 4px rgb(9, 9, 8);
+
+        border-radius: 6px;
+        background-color: aqua;
+
+        transition: 0.7s;
+        transform: translateY(-3px);
+      }
+      .semester button:hover {
+        box-shadow: 3px 4px 4px rgb(22, 33, 33);
+      }
+      div button span {
+        font-style: unset;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+      }
+      @media only screen and (max-width: 600px) {
+        header .logo h2 {
+          font-style: italic;
+          pointer-events: visibleFill;
+          text-decoration: none;
+          text-transform: initial;
+          cursor: pointer;
+          font-size: 30px;
+          color: white;
+        }
+        header .logo h2 span {
+          color: rgb(225, 241, 0);
+          font-size: 36px;
+          font-family: serif;
+          font-weight: bolder;
+        }
+        section {
+          margin: 7px;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          flex-wrap: wrap;
+          -ms-flex-align: center;
+          margin-top: 11%;
+
+          display: flex;
+          flex-basis: 30%;
+          gap: 40px;
+          margin-top: 60px;
+        }
+        div button {
+          padding: 20px;
+
+          color: rgb(233, 233, 233);
+          font-size: 18px;
+          background-color: rgb(7, 8, 6);
+          font-family: monospace;
+          border-radius: 10px;
+          border: 2px solid rgb(229, 230, 227);
+        }
+        button a {
+          color: white;
+        }
+        body {
+          width: 100%;
+          height: fit-content;
+          background-image: url(./1original.png);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo">
+          <h2><span>CGPA</span> Calculator</h2>
+        </div>
+      </header>
+      <section>
+        <div class="cumulative" onclick="cumulative()">
+          <a href="./cgpa.html"
+            ><button><span>C</span>umlative GPA</button></a
+          >
+        </div>
+        <div class="semester">
+          <a href="./sgpa.html"
+            ><button><span>S</span>emester GPA</button></a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

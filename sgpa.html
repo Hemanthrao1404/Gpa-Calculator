@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGPA Calculator</title>
+    <link href="sgpa.css" rel="stylesheet" />
+    <script type="text/javascript" src="./sgpa.js"></script>
+  </head>
+  <body>
+    <div class="cointainer">
+      <header>
+        <h1>Semester GPA</h1>
+      </header>
+    </div>
+    <form class="main" id="main">
+      <div class="flex">
+        <label>No of Subject with Lab :</label>
+        <input
+          type="number"
+          class="number"
+          id="number"
+          max="8"
+          min="2"
+          placeholder="Enter the Number"
+          required
+        />
+      </div>
+      <br />
+      <div class="submit">
+        <button type="submit" onclick="createSubjectForms()">Submit</button>
+      </div>
+    </form>
+    <div class="form1" id="subjectsForm">
+      <!-- Subject forms will be added here -->
+      <button type="submit" id="submit" onclick="calculateSGPA()"></button>
+    </div>
+    <div class="popup" id="popup">
+      <h2 class="heading">
+        ❤️❤️Congrutulation🎆🎇 Your Total CGPA Until Now is
+      </h2>
+      <br />
+      <h3 class="marks1" id="marks1"></h3>
+      <button type="submit" onclick="submit2()" id="sumbit2" class="submit2">
+        OK
+      </button>
+    </div>
+  </body>
+</html>

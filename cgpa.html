@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h1>Cumulative GPA</h1>
+      </div>
+
+      <main>
+        <div class="semnum1">
+          <form class="semnum" id="semnum">
+            <h3>Enter number of Semester you have Completed</h3>
+            <input
+              type="number"
+              max="10"
+              id="semester"
+              min="5"
+              required
+            /><br />
+            <button type="submit" onclick="semnum1()">Submit</button>
+          </form>
+        </div>
+        <div class="semnum2">
+          <form class="semnum2()" id="semnum12">
+            <div class="flex">
+              <h3>Enter GPA To find CGPA</h3>
+            </div>
+            <div id="semnum3"></div>
+            <button onclick="semnum4()" id="submit1" type="submit"></button>
+          </form>
+        </div>
+      </main>
+    </header>
+    <div id="popup">
+      <h3 class="heading">❤️❤️Congrutulation🎆🎇 Your Total Cgpa is :</h3>
+      <h3 class="mark" id="mark"></h3>
+      <h3 class="heading">Your Percentage is :</h3>
+      <h3 class="mark" id="mark2"></h3>
+      <button type="submit" onclick="submit3()" class="submit3">OK</button>
+    </div>
+  </body>
+</html>
